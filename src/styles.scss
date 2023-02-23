@@ -1,0 +1,95 @@
+@import "~@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+:root {
+	--background: #222222;
+	--grouping-background: #111111;
+	--box-background: #333333;
+	--text: #eeeeee;
+	--crit-text: #e59393;
+
+	--search-suggestion: #181818;
+	--search-suggestion-hover: #282828;
+
+	--stat-bar-back: #444444;
+
+	--ohko: #d84a4a;
+	--thko: #c3d84a;
+
+	--speed-faster: #3cd9f5;
+	--speed-tied: #ecdf68;
+	--speed-slower: #d47070;
+
+	--high-switch-priority: var(--speed-faster);
+	--low-switch-priority: var(--speed-slower);
+
+	--highlighted: #49adff;
+	--dupe-background: #531414;
+
+	--stat-bar-fill-terrible: #ec6868;
+	--stat-bar-fill-mediocre: #ecb768;
+	--stat-bar-fill-decent: #98ec68;
+	--stat-bar-fill-great: #3cf57a;
+	--stat-bar-fill-amazing: #3c86f5;
+
+	--gender-unknown: #4b4b4b;
+	--gender-male: #3099f0;
+	--gender-female: #f79dff;
+
+	--any: #a2d891;
+	--day: #61b1d6;
+	--night: #432f70;
+	--morning: #d3c264;
+
+	--route: #e4cb7b;
+	--route-dark: #b19d5c;
+	--route-darker: #968344;
+	--route-light: #f8e194;
+	--town: #3e6ff5;
+	--town-dark: #2b51b9;
+	--town-darker: #1d3c92;
+	--town-light: #628bfd;
+	--dungeon: #d85778;
+	--dungeon-dark: #b44460;
+	--dungeon-darker: #8f3149;
+	--dungeon-light: #f8809e;
+}
+
+html {
+	background-color: var(--background);
+	color: var(--text);
+	font-family: "Ubuntu Mono";
+	font-size: 24px;
+}
+
+lb {
+	display: block;
+	height: 10px;
+}
+
+body {
+	padding-left: calc(50% - 516px);
+	padding-right: calc(50% - 516px);
+	min-width: 1024px;
+	overflow-x: scroll;        
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+	display: block;
+}
+
+button, select {
+	padding: 2px;
+	font-family: "Ubuntu Mono";
+	font-size: 16px;
+	color: var(--text);
+	background-color: var(--box-background);
+	border-style: solid;
+	border-color: var(--grouping-background);
+	cursor: pointer;
+}
+
+button:hover, select:hover {
+	color: var(--highlighted) !important;
+}
+html, body { height: 100%; }

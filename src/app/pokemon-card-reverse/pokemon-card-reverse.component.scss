@@ -1,0 +1,110 @@
+.custom-font {
+    font-family: Trebuchet MS, sans-serif;
+    .pokemon-card-title {
+        display: flex;
+        justify-content: flex-end;
+        gap: .75rem;
+    }
+    .pokemon-card-subtitle {
+        display: flex;
+        justify-content: flex-end;
+        gap: .75rem;
+        margin: auto;
+        height: 1rem;
+        span {
+            margin-top: auto;
+        }
+    }
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        .pokemon-details {
+            display: flex;
+            gap: 1rem;
+            .pokemon-sprite {
+                margin: auto;
+                width: 50%;
+                height: 50%;
+            }
+            .pokemon-stats {
+                width: 50%;
+                .stat-row {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 1rem;
+                    span {
+                        margin: auto;
+                    }
+                    .stat-input {
+                        width: 25%;
+                        text-align: right;
+                    }
+                    button {
+                        height: 50%;
+                        margin: auto;
+                    }
+                    div {
+                        width: 22%;
+                    }
+                    img {
+                        width: 23%;
+                        height: 23%;
+                    }
+                    .reflect-activated {
+                        border: 3px solid #009688;
+                        width: 20%;
+                        height: 20%;
+                    }
+                }
+            }
+        }
+        .pokemon-typing {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin-left: 51%;
+            img {
+                width: 40%;
+            }
+        }
+        .pokemon-attacks {
+            padding-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            .attack-row {
+                display: flex;
+                justify-content: space-between;
+                .normal-damage, .crit-damage {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin: auto;
+                    .percentages {
+                        font-size: .5rem;
+                    }
+                    .damage {
+                        font-size: .75rem;
+                    }
+                }
+                span {
+                    margin: auto;
+                }
+            }
+        }
+        .pokemon-team {
+            padding-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .pokemon-team-sprite {
+                width: 16.65%;
+            }
+        }
+    }
+}
+
+::ng-deep .mat-card-title {
+    font-size: 0.9rem !important;
+}
