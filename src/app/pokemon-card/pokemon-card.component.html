@@ -1,0 +1,103 @@
+<mat-card class="custom-font">
+    <mat-card-title class="pokemon-card-title">
+        <span>{{pokemon.species}}</span>
+        <span>{{pokemon.gender}}</span>
+        <span>{{pokemon.item}}</span>
+    </mat-card-title>
+    <mat-card-subtitle class="pokemon-card-subtitle">
+        <span>{{'Lvl ' + pokemon.level}}</span>
+        <button>Edit</button>
+    </mat-card-subtitle>
+    <mat-card-content class="card-content">
+        <div class="pokemon-details">
+            <img class="pokemon-sprite" [src]="pokemon.urlSprite">
+            <div class="pokemon-stats">
+                <form>
+                    <div class="stat-row">
+                        <span>HP</span>
+                        <span [innerHTML]="pokemon.stats.HP"></span>
+                        <mat-form-field class="stat-input">
+                            <input type="number" matInput [value]="pokemon.stats.HP" [max]="pokemon.stats.HP">
+                        </mat-form-field>
+                        <button>Clear</button>
+                    </div>
+                    <div class="stat-row">
+                        <span>ATK</span>
+                        <span [innerHTML]="pokemon.stats.ATK"></span>
+                        <mat-form-field class="stat-input">
+                            <input type="number" matInput [value]="0" [max]="6" [min]="-6">
+                        </mat-form-field>
+                        <div></div>
+                    </div>
+                    <div class="stat-row">
+                        <span>DEF</span>
+                        <span [innerHTML]="pokemon.stats.DEF"></span>
+                        <mat-form-field class="stat-input">
+                            <input type="number" matInput [value]="0" [max]="6" [min]="-6">
+                        </mat-form-field>
+                        <img class="reflect-dectivated" src="./assets/images/reflect.png">
+                    </div>
+                    <div class="stat-row">
+                        <span>SPA</span>
+                        <span [innerHTML]="pokemon.stats.SPA"></span>
+                        <mat-form-field class="stat-input">
+                            <input type="number" matInput [value]="0" [max]="6" [min]="-6">
+                        </mat-form-field>
+                        <div></div>
+                    </div>
+                    <div class="stat-row">
+                        <span>SPD</span>
+                        <span [innerHTML]="pokemon.stats.SPD"></span>
+                        <mat-form-field class="stat-input">
+                            <input type="number" matInput [value]="0" [max]="6" [min]="-6">
+                        </mat-form-field>
+                        <img class="reflect-activated" src="./assets/images/lightScreen.png">
+                    </div>
+                    <div class="stat-row">
+                        <span>SPE</span>
+                        <span [innerHTML]="pokemon.stats.SPE"></span>
+                        <mat-form-field class="stat-input">
+                            <input type="number" matInput [value]="0" [max]="6" [min]="-6">
+                        </mat-form-field>
+                        <div></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="pokemon-typing">
+            <img src="https://archives.bulbagarden.net/media/upload/3/39/NormalIC_Big.png">
+            <img src="https://archives.bulbagarden.net/media/upload/c/cb/FlyingIC_Big.png">
+        </div>
+        <div class="pokemon-attacks">
+            <div class="attack-row">
+                <span>{{pokemon.attacks[0].name}}</span>
+                <div class="normal-damage"><span class="percentages">12.5% - 16.3%</span><span class="damage">34 - 46</span></div>
+                <div class="crit-damage"><span class="percentages">25% - 32%</span><span class="damage">68 - 92</span></div>
+            </div>
+            <div class="attack-row">
+                <span>{{pokemon.attacks[0].name}}</span>
+                <div class="normal-damage"><span class="percentages">12.5% - 16.3%</span><span class="damage">34 - 46</span></div>
+                <div class="crit-damage"><span class="percentages">25% - 32%</span><span class="damage">68 - 92</span></div>
+            </div>
+            <div class="attack-row">
+                <span>{{pokemon.attacks[0].name}}</span>
+                <div class="normal-damage"><span class="percentages">12.5% - 16.3%</span><span class="damage">34 - 46</span></div>
+                <div class="crit-damage"><span class="percentages">25% - 32%</span><span class="damage">68 - 92</span></div>
+            </div>
+            <div class="attack-row">
+                <span>{{pokemon.attacks[0].name}}</span>
+                <div class="normal-damage"><span class="percentages">12.5% - 16.3%</span><span class="damage">34 - 46</span></div>
+                <div class="crit-damage"><span class="percentages">25% - 32%</span><span class="damage">68 - 92</span></div>
+            </div>
+        </div>
+        <div class="pokemon-team">
+            <img class="pokemon-team-sprite" src="https://www.pokencyclopedia.info/sprites/gen3/spr_ruby-sapphire/spr_rs_001.png">
+            <img class="pokemon-team-sprite" src="https://www.pokencyclopedia.info/sprites/gen3/spr_ruby-sapphire/spr_rs_002.png">
+            <img class="pokemon-team-sprite" src="https://www.pokencyclopedia.info/sprites/gen3/spr_ruby-sapphire/spr_rs_003.png">
+            <img class="pokemon-team-sprite" src="https://www.pokencyclopedia.info/sprites/gen3/spr_ruby-sapphire/spr_rs_004.png">
+            <img class="pokemon-team-sprite" src="https://www.pokencyclopedia.info/sprites/gen3/spr_ruby-sapphire/spr_rs_005.png">
+            <img class="pokemon-team-sprite" src="https://www.pokencyclopedia.info/sprites/gen3/spr_ruby-sapphire/spr_rs_006.png">
+            <img class="pokemon-team-sprite" src="https://www.pokencyclopedia.info/sprites/gen3/spr_ruby-sapphire/spr_rs_007.png">
+        </div>
+    </mat-card-content>
+</mat-card>

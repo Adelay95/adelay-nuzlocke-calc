@@ -1,0 +1,33 @@
+h1 {
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: bold;
+    padding-top: 0.75em;
+    font-size: 2rem;
+}
+
+::ng-deep .mat-form-field-ripple {
+    background-color: #80CBC4 !important;
+}
+
+::ng-deep .mat-form-field-label {
+    color: #80CBC4 !important;
+}
+
+::ng-deep .mat-ink-bar {
+    background: #009688 !important;
+}
+
+::ng-deep .mat-group {
+    height: 100% !important;
+}
+
+::ng-deep .mat-tab-body-wrapper {
+    height: 100% !important;
+}
+
+.mat-group {
+    height: 100%;
+    .component-height {
+        height: 100%;
+    }
+}

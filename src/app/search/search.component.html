@@ -1,0 +1,11 @@
+<form class="search-form">
+    <mat-form-field class="search-full-width" appearance="fill">
+      <mat-label class="custom-font">Pokemon or move</mat-label>
+      <input class="custom-font" type="text" matInput placeholder="Rain dance, Blastoise, ..." [formControl]="searchControl" [matAutocomplete]="auto">
+      <mat-autocomplete class="custom-font" #auto="matAutocomplete" >
+        <mat-option class="custom-font" *ngFor="let option of dbSearchCandidates | async" [value]="option.label">
+          {{option.label}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
