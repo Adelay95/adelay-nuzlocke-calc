@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Pokemon } from '../constant';
 
 export enum Gender {
   Masculine = '♂',
@@ -26,6 +27,10 @@ export interface PokemonData {
   level: number,
   urlSprite: string,
   stats: StatModel,
+  ivs?: StatModel,
+  nature: string,
+  type1: string,
+  type2?: string,
   attacks: AttackModel[],
 }
 
@@ -35,6 +40,9 @@ export interface PokemonData {
   styleUrls: ['./calc.component.scss']
 })
 export class CalcComponent implements OnInit {
+
+  @Input()
+  pkmList: Pokemon[];
 
 
   constructor() { }

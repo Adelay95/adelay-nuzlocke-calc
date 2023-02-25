@@ -16,7 +16,7 @@ import { PokemonCardComponent } from './pokemon-card/pokemon-card.component';
   imports: [
     BrowserModule,
     CalcModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     SearchModule,
     MatTabsModule,
     BrowserAnimationsModule

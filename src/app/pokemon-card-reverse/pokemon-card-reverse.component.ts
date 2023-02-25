@@ -22,6 +22,9 @@ export class PokemonCardReverseComponent implements OnInit {
       SPD: 86,
       SPE: 138
     },
+    type1: "Normal",
+    nature: "Adamant",
+    type2: "Flying",
     attacks: [
       {
         name: 'Jump Kick'
